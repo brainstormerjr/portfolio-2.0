@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    @apply bg-oxfordblue
+}
+
+.markdown {
+    @apply md:text-lg text-xs;
+}
+
+.markdown > h1 {
+    @apply md:text-4xl text-xl md:mt-8 mt-4 pb-2 mb-6 font-extrabold border-b-ultraviolet border-b-2;
+}
+
+.markdown > h2 {
+    @apply md:text-3xl text-lg mt-8 pb-1 mb-3 font-bold border-b-oxfordblue border-b-2;
+}
+
+.markdown > h3 {
+    @apply md:text-2xl mt-8 pb-1 mb-2 font-semibold;
+}
+
+.markdown > h4 {
+    @apply font-semibold;
+}
+
+.markdown > p {
+    @apply my-4;
+}
+
+.markdown > table {
+    @apply mx-auto;
+}
+
+.markdown > ul {
+    @apply list-disc ml-8;
+}
+
+.markdown a {
+    @apply text-rosequartz;
+}
