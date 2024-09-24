@@ -11,7 +11,7 @@ export const load: Load = async ({ params }) => {
     let project: project = projects.find((value) => {return value.id == params.slug}) ?? nullProject
 
     if (project != nullProject) {
-        const mdFilePath = path.resolve("src/lib/projects", `${params.slug}.md`)
+        const mdFilePath = path.resolve("static/projects", `${params.slug}.md`)
         
         const response = fs.readFileSync(mdFilePath, "utf8")
 
