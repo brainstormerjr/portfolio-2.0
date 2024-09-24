@@ -35,3 +35,14 @@ docker build -t brainstormerjr/portfolio-2.0:latest .
 # Push
 docker push brainstormerjr/portfolio-2.0:latest
 ```
+
+## Serving via Docker Compose
+```bash
+# Pull repository from GitHub
+git pull https://github.com/brainstormerjr/portfolio-2.0.git
+cd portfolio-2.0
+# Pull docker image for hosting
+docker pull brainstormerjr/portfolio-2.0:latest
+# Hosting user docker-compose
+sudo docker-compose up -d
+```
